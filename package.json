@@ -7,17 +7,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "locale:check": "i18n-check -l src/locales -s enUS -u src -f next-intl"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.13.10",
     "next": "16.1.6",
+    "next-intl": "^4.8.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "zod": "^4.3.6"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
+    "@lingual/i18n-check": "^0.8.19",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

@@ -23,12 +23,6 @@
 * **Commitlint / Commitizen** (Commit message standardization)
 * **Knip** (Unused files & dependencies detection)
 
-### Internationalization (i18n)
-
-* **next-intl** (Next.js multilingual support)
-* **Crowdin** (Translation management platform)
-* **i18n-check** (Missing translation & validation tool)
-
 ### Testing & Observability
 
 * **Vitest** (Unit testing & Browser mode)

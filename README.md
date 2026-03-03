@@ -13,5 +13,7 @@
 - **Biome** (All-in-one linter, formatter, and organizer)
 - **Tailwind CSS** (Utility-first styling)
 - **T3 Env** (Environment variables validation)
+- **next-intl** (Next.js multilingual support)
+- **i18n-check** (Missing translation & validation tool)
 
 ### Additional Features
