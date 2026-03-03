@@ -33,6 +33,4 @@
 
 ### Payments & Communication
 
-- Resend (email)
-- Stripe (payment)
 - LemonSqueezy (payment)

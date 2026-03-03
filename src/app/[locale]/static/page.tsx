@@ -1,5 +1,5 @@
-import { useTranslations } from "next-intl";
 import { routing } from "@/lib/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=20",
+    "node": ">=24",
     "npm": ">=11"
   },
   "scripts": {
@@ -12,24 +12,42 @@
     "build": "next build",
     "lint": "biome check",
     "format": "biome format --write",
-    "locale:check": "i18n-check -l src/locales -s enUS -u src -f next-intl"
+    "locale:check": "i18n-check -l src/locales -s enUS -u src -f next-intl",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@neondatabase/serverless": "^1.0.2",
     "@t3-oss/env-nextjs": "^0.13.10",
+    "better-auth": "^1.5.2",
+    "drizzle-orm": "^0.45.1",
+    "immer": "^11.1.4",
     "next": "16.1.6",
     "next-intl": "^4.8.3",
+    "pg": "^8.19.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "zod": "^4.3.6"
+    "react-hook-form": "^7.71.2",
+    "redis": "^5.11.0",
+    "resend": "^6.9.3",
+    "server-only": "^0.0.1",
+    "stripe": "^20.4.0",
+    "zod": "^4.3.6",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
     "@lingual/i18n-check": "^0.8.19",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^20.19.35",
+    "@types/pg": "^8.18.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "babel-plugin-react-compiler": "1.0.0",
+    "drizzle-kit": "^0.31.9",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3"
   }
